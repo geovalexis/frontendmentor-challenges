@@ -61,16 +61,18 @@ body {
 
 .clients-logos {
     height: 10%;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: row;    
     justify-content: space-between;
 }
 
-img.client-logo {
-    width: auto;
-    height: 45%;
-    padding: 10px 10px 10px 0;
+.client-logo-item {
+    padding: 1em 2em 1em 0;
+}
+
+.client-logo-item > img {
+    width: 100%;
 }
 
 img.big-image {
