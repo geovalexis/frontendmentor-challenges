@@ -27,7 +27,7 @@ body {
 .item__submenu {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -40,7 +40,20 @@ body {
     display: block;
   }
 
+/* #TODO: Refactor arrow styles to be used for each page item */
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.arrow_up {
+    display: none;
+}
+
 .pages__item:hover .item__submenu {display: block;}
+.pages__item:hover .arrow_up {display: block;}
+.pages__item:hover .arrow_down {display: none;}
 .item__submenu a:hover {background-color: #ddd;}
 
 
